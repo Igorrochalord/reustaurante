@@ -38,7 +38,6 @@
     <link rel="preload" as="imagem" href="../public/img/hero-slider-3.jpg">
 </head>
 <body>
-
     <!--
         -#preloader (preloading para os mais proximos)
     -->
@@ -731,32 +730,34 @@
  <!-- 
         - #RESERVATION
       -->
-    <form method='POST'action="../php/reserva.php">
+    <form method='POST' action="../php/reserva.php">
       <section class="reservation">
         <div class="container">
           <div class="form reservation-form bg-black-10">
               <h2 class="headline-1 text-center">Reservas Online</h2>
               <p class="form-text text-center">
-                Booking request <a href="tel:+88123123456" class="link">+88-123-123456</a>
-                ou prencha presencial 
+                Nao sera aceito cancelamentos ou mesmo rembolsos ,lembrese e um reustaurante sazonal , o dinheiro vai para a pequena cidade , tenha conciencia de sua reserva  <a href="tel:+88123123456" class="link">+88-123-123456</a>
+                para caso de duvida as mais entrar em contato com o prefeito da cidade e o diretor do reustaurante  
               </p>
               <div class="input-wrapper">
-                  <input type="text" name="name" placeholder=" Nome" autocomplete="off" class="input-field">
-                  <input type="tel" name="phone" placeholder="Numero" autocomplete="off" class="input-field" >
-                </form>
+                <!--  form ?-->
+                <input type="text" name="name" placeholder=" Nome" autocomplete="off" class="input-field">
+                <input type="tel" name="phone" placeholder="Numero" autocomplete="off" class="input-field" >
+   
               </div>
               <div class="input-wrapper">
                 <div class="icon-wrapper">
                     <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-                    <select name="person" class="input-field">
-                      <option value="1-person">1 Pessoa</option>
-                      <option value="2-person">2 Pessoas</option>
-                      <option value="3-person">3 Pessoas</option>
-                      <option value="4-person">4 Pessoas</option>
-                      <option value="5-person">5 Pessoas</option>
-                      <option value="6-person">6 Pessoas</option>
-                      <option value="7-person">7 Pessoas</option>
-                  </select>
+                      <select name="person" class="input-field">
+                        <option value="1">1 Pessoa</option>
+                        <option value="2">2 Pessoas</option>
+                        <option value="3">3 Pessoas</option>
+                        <option value="4">4 Pessoas</option>
+                        <option value="5">5 Pessoas</option>
+                        <option value="6">6 Pessoas</option>
+                        <option value="7">7 Pessoas</option>
+                    </select>
+                    <input type="submit" value="Enviar">
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
                 <div class="icon-wrapper">
@@ -766,22 +767,23 @@
                 </div>
                 <div class="icon-wrapper">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-                <select name="person" class="input-field">
+                   <!--  form ?-->
+                <select name="hour" class="input-field">
                         <option value="08:00am">08 : 00 </option>
                         <option value="09:00am">09 : 00 </option>
                         <option value="010:00am">10 : 00 </option>
                         <option value="011:00am">11 : 00 </option>
                         <option value="012:00am">12 : 00 </option>
-                        <option value="01:00pm">01 : 00 </option>
-                        <option value="02:00pm">02 : 00 </option>
-                        <option value="03:00pm">03 : 00 </option>
-                        <option value="04:00pm">04 : 00 </option>
-                        <option value="05:00pm">05 : 00 </option>
-                        <option value="06:00pm">06 : 00 </option>
-                        <option value="07:00pm">07 : 00 </option>
-                        <option value="08:00pm">08 : 00 </option>
-                        <option value="09:00pm">09 : 00 </option>
-                        <option value="10:00pm">10 : 00 </option>
+                        <option value="01:00pm">13 : 00 </option>
+                        <option value="02:00pm">14 : 00 </option>
+                        <option value="03:00pm">15 : 00 </option>
+                        <option value="04:00pm">16 : 00 </option>
+                        <option value="05:00pm">17 : 00 </option>
+                        <option value="06:00pm">18 : 00 </option>
+                        <option value="07:00pm">19 : 00 </option>
+                        <option value="08:00pm">20 : 00 </option>
+                        <option value="09:00pm">21 : 00 </option>
+                        <option value="10:00pm">22 : 00 </option>
                 </select>
                         <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
@@ -790,18 +792,18 @@
             
                     <textarea name="message" placeholder="Mensagem" autocomplete="off" class="input-field"></textarea>
      
-                    <button type="submit" class="btn btn-secondary">
+                    <button type="submit" class="btn btn-secondary" >
                       <span class="text text-1">pegue uma mesa</span>
 
                       <span class="text text-2" aria-hidden="true">pegue uma mesa</span>
                     </button>
                 </div>
-              
+     </form>         
                 <!--
         O PHP DEVERIA ACABAR AQUI 
       -->
 
-      </form>
+    
             <div class="form-right text-center" style="background-image: url('../public/img/form-pattern.png')">
               <h2 class="headline-1 text-center">ENTRE EM CONTATO</h2>
               <p class="contact-label">Booking Request</p>

@@ -1,5 +1,5 @@
 <?php
-//get e 
+//get e um dos métodos utilizados para o envio de dados de um formulário web para processamento
     $servidor="localhost";
     $usuario="root";
     $senha="";
